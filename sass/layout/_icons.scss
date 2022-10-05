@@ -1,0 +1,31 @@
+
+.icons-list {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 16px;
+}
+
+.icon-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	color: var(--icon-link-color);
+	background-color: var(--primary-white-color);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
+}
+
+.instagram-icon {
+	width: 20px;
+	height: 20px;
+	fill: currentColor;
+}
