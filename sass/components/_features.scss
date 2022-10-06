@@ -1,18 +1,39 @@
 .features {
 	padding: 94px 0;
+	@media screen and (max-width: 1199px)
+	{ padding: 60px 0;
+}
 }
 
 .features_list {
 	display: flex;
 	gap: 30px;
 	justify-content: center;
+	@media screen and (max-width: 767.8px)
+ {
+    flex-direction: column;
+    align-items: center;
+}	
+	@media screen and (min-width: 768px) and (max-width: 1199px)
+{
+	flex-wrap: wrap;
+}	
 }
 
 .features_item {
-	width: 270px;
+	min-width: 270px;
 	height: auto;
 	text-align: start;
 	justify-content: flex-start;
+	@media screen and (max-width: 767.8px)
+ {
+    width: 100%;
+}
+	@media screen and (min-width: 768px) and (max-width: 1199px)
+{
+	min-width: 354px ;
+	width: calc((100% - 60px)/2);
+}
 }
 
 .features_block {
@@ -24,8 +45,12 @@
 	border-radius: 4px;
 	margin-bottom: 30px;
 	background-color: var(--secondary-btn-color);
+	@media screen and (max-width: 1199px)
+	{
+		width: 100%;
+	}
+	
 }
-
 .features_icon {
 	width: 70px;
 	height: 70px;
@@ -35,8 +60,12 @@
 	font-size: 14px;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	@media screen and (max-width: 767.8px)
+	{
+		text-align: center;
+	}
 }
 
 .features_text {
 	line-height: 1.7;
-}
+	}

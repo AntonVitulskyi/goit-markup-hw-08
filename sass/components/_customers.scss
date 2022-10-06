@@ -1,6 +1,10 @@
 
 .customers {
 	padding: 94px 0;
+	
+	@media screen and (max-width: 1199px)
+	{ padding: 60px 0;
+}
 }
 
 .customers_title {
@@ -9,12 +13,25 @@
 	line-height: 1.16;
 	margin-bottom: 50px;
 	text-align: center;
+	
+	@media screen and (max-width: 1199px) 
+	{
+		font-size: 28px;
+		line-height: 33px;
+	}
+
 }
 
 .customers_list {
 	display: flex;
 	justify-content: center;
 	gap: 30px;
+	
+	@media screen and (max-width: 1199px)
+	{
+		width: 100%;
+		flex-wrap: wrap;
+	}
 }
 
 .custumer_icon {
@@ -43,6 +60,17 @@
 	border-color: var(--accent-color);
 	color: var(--accent-color);
 }
+	
+@media screen and (max-width: 767.8px)
+	{
+		min-width: 210px;
+	}
+	
+	@media screen and (min-width: 767.8px) and (max-width: 1199px)
+	{
+		min-width: 226px;
+	}
+
 }
 
 
