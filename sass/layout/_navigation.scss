@@ -1,17 +1,13 @@
 .site-nav {
 	margin-left: 93px;
-	margin-right: 310px;
+	margin-right: auto;
 	display: flex;
 	gap: 50px;
 	@media screen and (min-width: 768px) and (max-width: 1199.8px)
 	{
-		margin-left: 70px;
-		margin-right: 70px;
+		margin: 0 auto;
 	}
-	@media screen and (max-width: 768px)
-	{
-		display: none;	
-	}
+
 }
 
 .site-nav .link {
@@ -47,3 +43,4 @@
 	background-color: var(--accent-color);
 	border-radius: 2px;
 }
+
