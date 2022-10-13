@@ -42,7 +42,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -60,7 +59,7 @@
   
   .menu-toggle:hover,
   .menu-toggle:focus {
-    background-color: rgba(215, 9, 9, 0.1);
+    color: var(--accent-color);
   }
   
   .menu-container {
@@ -69,7 +68,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 32px;
+    padding: 48px 40px;
     background-color: white;
     z-index: 999;
     transform: translateX(100%);
@@ -84,7 +83,7 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    color: #fff;
+    color: var(--primary-text-color);
   }
   
   .mobile-menu {
@@ -103,8 +102,6 @@
 .mobile-menu-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -113,11 +110,7 @@
 .mobile-navigation {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 45px;
-height: 400px;
-width: auto;
-background-color: white
+  gap: 36px;
   }
 
   .navigation-item {
@@ -134,17 +127,21 @@ color: #212121;
 .mobile-contact-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 35px;
-height: 200px;
-text-decoration: none;
+  gap: 32px;
+  text-decoration: none;
+  margin-top: 150px;
 }
 .contact-item:first-child a {
   font-weight: 500;
-font-size: 34px;
+font-size: 32px;
 line-height: 40px;
 letter-spacing: 0.02em;
 color: #2196F3;
+
+@media screen and (max-width: 479px)
+{
+  font-size: 26px;
+}
 }
 
 .contact-item:last-child a {
@@ -158,13 +155,11 @@ color: #757575;
 .social-contact-list {
   display: flex;
   flex-direction: row;
-justify-content: center;
- flex-wrap: wrap;
-gap: 10px;
+  gap: 10px;
   width: auto;
   height: auto;
   background-color: white;
-  padding: 15px;
+  margin-top: 64px ;
  }
 
  .contact-link a {
@@ -173,7 +168,14 @@ font-size: 18px;
 line-height: 22px;
 letter-spacing: 0.02em;
 color: #2196F3;
+
+@media screen and (max-width: 479px)
+{
+  font-size: 12px;
+}
  }
+
+
  .link-separation {
   font-size: 20px;
   color: #757575;

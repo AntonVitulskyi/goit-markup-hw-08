@@ -3,6 +3,7 @@
 	margin-right: auto;
 	display: flex;
 	gap: 50px;
+	height: 100%;
 	@media screen and (min-width: 768px) and (max-width: 1199.8px)
 	{
 		margin: 0 auto;
@@ -37,9 +38,9 @@
 	display: block;
 	content: "";
 	position: absolute;
-	width: 100%;
+	width: 75%;
 	height: 4px;
-	bottom: 0;
+	bottom: -18px;
 	background-color: var(--accent-color);
 	border-radius: 2px;
 }

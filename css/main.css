@@ -685,6 +685,7 @@ header .container {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
+  height: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 1199.8px) {
   .site-nav {
@@ -721,9 +722,9 @@ header .container {
   display: block;
   content: "";
   position: absolute;
-  width: 100%;
+  width: 75%;
   height: 4px;
-  bottom: 0;
+  bottom: -18px;
   background-color: var(--accent-color);
   border-radius: 2px;
 }
@@ -1326,7 +1327,7 @@ header .container {
 
 .features_text {
   line-height: 1.7;
-  width: 50%;
+  width: 100%;
 }
 
 .filter {
@@ -1588,6 +1589,10 @@ header .container {
   }
 }
 
+.big-icecream {
+  width: 100%;
+}
+
 .customers {
   padding: 94px 0;
 }
@@ -1742,7 +1747,7 @@ header .container {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(215, 9, 9, 0.1);
+  color: var(--accent-color);
 }
 
 .menu-container {
@@ -1751,7 +1756,7 @@ header .container {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 32px;
+  padding: 48px 40px;
   background-color: white;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -1771,7 +1776,7 @@ header .container {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--primary-text-color);
 }
 
 .mobile-menu {
@@ -1795,12 +1800,6 @@ header .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -1814,13 +1813,7 @@ header .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 45px;
-  height: 400px;
-  width: auto;
-  background-color: white;
+  gap: 36px;
 }
 
 .navigation-item {
@@ -1843,20 +1836,22 @@ header .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 35px;
-  height: 200px;
+  gap: 32px;
   text-decoration: none;
+  margin-top: 150px;
 }
 
 .contact-item:first-child a {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 32px;
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (max-width: 479px) {
+  .contact-item:first-child a {
+    font-size: 26px;
+  }
 }
 
 .contact-item:last-child a {
@@ -1875,16 +1870,11 @@ header .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 10px;
   width: auto;
   height: auto;
   background-color: white;
-  padding: 15px;
+  margin-top: 64px;
 }
 
 .contact-link a {
@@ -1893,6 +1883,11 @@ header .container {
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (max-width: 479px) {
+  .contact-link a {
+    font-size: 12px;
+  }
 }
 
 .link-separation {
